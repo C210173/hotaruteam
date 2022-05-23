@@ -1,0 +1,651 @@
+*{
+    scroll-behavior: smooth;
+}
+#header {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background: url('./img/background.png') no-repeat center;
+    background-size: cover;
+}
+
+.nav {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1000;
+    transition: 0.5s;
+}
+.nav:hover{
+    box-shadow: 2px 5px 5px rgb(0,0,0,0.15);
+}
+
+.thay_doi_nav_tokyo{
+    background-color: rgba(255, 255, 255, 0);
+}
+.thay_doi_nav_yokohama{
+    box-shadow: 2px 5px 5px rgb(0,0,0,0.15);
+}
+
+.logo{
+    position: relative;
+    left: 0%;
+    transition: 2s;
+}
+.logo__show{
+    left: 25%;
+}
+
+.logo__img {
+    position: relative;
+    margin: 6px 0 6px 12px;
+    width: 50px;
+    height: 50px;
+    float: left;
+    transition: all 2s;
+    animation: animation__logo__img 7s;
+}
+@keyframes animation__logo__img{
+    0% {transform: rotateZ(0deg); left: 0%;}
+    5% {transform: rotateZ(90deg); left: 0%;}
+    50% {transform: rotateZ(270deg); left: 250%;}
+    95% {transform: rotateZ(270deg); left: 2%;}
+    100% {transform: rotateZ(360deg); left: 0%;}  
+}
+
+.logo__name {
+    position: relative;
+    height: 50px;
+    margin: 6px 0;
+    animation: animation__name__img 7s;
+}
+@keyframes animation__name__img{
+    0% { left: 250%;opacity: 0;}
+    50% { left: 250%; opacity: 0;}
+    95% { left: 2%;}
+    100% { left: 0%; opacity: 1;}  
+}
+
+#navbar {
+    display: flex;
+    justify-content: right;
+    margin: 0;
+}
+
+.navbar__item {
+    list-style: none;
+}
+
+.navbar__color{
+    display: block;
+    font-size: 22px;
+    line-height: 65px;
+    padding: 0 0px;
+    width: 170px;
+    height: 48px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: 600;
+    transition: 0.5s;
+    color: rgb(255, 0, 0);
+}
+.color__hightline{
+    color: black;
+}
+.navbar__color:hover{
+    color: rgb(251,153,66);
+    transform: scale(1.2);
+}
+
+.title {
+    position: absolute;
+    width:      500px;
+    height:     500px;
+    border:     1px solid #999;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    top:  calc((100% - 440px)/2);
+    left: calc((100% - 500px)/2);
+    animation: title_animation 4s forwards;
+}
+/* @keyframes title_animation{
+    from{
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+} */
+
+.title::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width:  520px;
+    height: 520px;
+    background-color: transparent;    
+    border: 5px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    top:    -15px;
+    left:   -15px;
+}
+
+.title__year {
+    position: absolute;
+    top:         86px;
+    width: 152px;
+    text-align: center;
+    left: calc((100% - 152px)/2);
+    font-size:   56px;
+    font-weight: 600;
+    color: #000;
+    animation: year_animation 3s forwards;
+}
+/* @keyframes year_animation{
+    from{
+        left: -500px;
+    }
+    to {
+        left: calc((100% - 152px)/2);
+    }
+} */
+
+.title__english {
+    position: absolute;
+    top:         148px;
+    left: calc((100% - 142px)/2);
+    text-align: center;
+    width:       142px;
+    font-size:   24px;
+    font-weight: 400;
+    color: #333;
+    animation: title__english_animation 3s forwards;
+}
+/* @keyframes title__english_animation{
+    from{
+        left: 700px;
+    }
+    to {
+        left: calc((100% - 142px)/2);
+    }
+} */
+
+.title__main {
+    position: absolute;
+    width: 300px;
+    left: calc((100% - 300px)/2);
+    text-align: center;
+    font-size: 60px;
+    font-weight: 800;
+    color: #000;
+    top: 188px;
+    animation: title__main_animation 4s forwards;
+}
+/* @keyframes title__main_animation{
+    from{
+        left: -500px;
+    }
+    to {
+        left: calc((100% - 300px)/2);
+    }
+} */
+
+.title__group {
+    position: absolute;
+    text-align: center;
+    width: 200px;
+    font-size: 28px;
+    font-weight: 500;
+    top: 350px;
+    left: calc((100% - 232px)/2);
+    background-color: #333;
+    color: #fff;
+    border-radius: 24px;
+    padding: 4px 16px;
+    animation: title__group_animation 4s forwards;
+}
+/* @keyframes title__group_animation {
+    from{
+        left: 700px;
+    }
+    to {
+        left: calc((100% - 232px)/2);
+    }
+} */
+
+
+
+/* content tokyo */
+.tokyo {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 115vh;
+}
+.momiji__circle{
+    position: relative;
+    width: 450px;
+    height: 450px;
+    top: -50px;
+    left: -50px;
+    transition: 3s;
+}
+
+.tokyo__title {
+    position:     absolute;
+    top:          220px;
+    left:         430px;
+    font-size:    140px;
+    color:        rgba(251,153,66,1);
+    font-family: 'Ephesis', cursive;
+}
+    .tokyo__title__merge1{
+        position: relative;
+        left: 6%;
+        top: -300px;
+        opacity: 0;
+        transition: 1.5s 1s;
+    }
+    .tokyo__title__merge1__show{
+        top: 0;
+        opacity: 1;
+    }
+    .tokyo__title__merge2{
+        position: relative;
+        left: -2%;
+        top: -300px;
+        opacity: 0;
+        transition: 1.8s 1.5s;
+    }
+    .tokyo__title__merge2__show{
+        top: 0;
+        opacity: 1;
+    }
+    .tokyo__title__merge3{
+        position: relative;
+        left: -8%;
+        top: -300px;
+        opacity: 0;
+        transition: 2.1s 2s;
+    }
+    .tokyo__title__merge3__show{
+        top: 0;
+        opacity: 1;
+    }
+    .tokyo__title__merge4{
+        position: relative;
+        left: -12%;
+        top: -300px;
+        opacity: 0;
+        transition: 2.4s 2.5s;
+    }
+    .tokyo__title__merge4__show{
+        top: 0;
+        opacity: 1;
+    }
+    .tokyo__title__merge5{
+        position: relative;
+        left: -18%;
+        top: -300px;
+        opacity: 0;
+        transition: 2.7s 3s;
+    }
+    .tokyo__title__merge5__show{
+        top: 0;
+        opacity: 1;
+    }
+
+.tokyo__text__sub {
+    position: absolute;
+    width:       595px;
+    top:         380px;
+    left:        290px;
+    font-size:   28px;
+    line-height: 36px;
+    /* font-family: 'M PLUS Rounded 1c', sans-serif; */
+    transition:  2s;
+}
+
+.tokyo__img {
+    position: absolute;
+    width:         640px;
+    top:           74px;
+    right:        -110px;
+    border-radius: 50%;
+    transition: 2s;
+}
+
+
+
+
+/* yokohama */
+.yokohama {
+    background-image: linear-gradient(to bottom, #fff 5%,#2f5f99 );
+    background-size: cover;
+    width: auto;
+    height: 115vh;
+    position: relative;
+}
+.yokohama__container{
+    position: absolute;
+    height: auto;
+    width: auto;
+    top: 67px;
+    right: 67px;
+    left: 67px;
+    bottom: 50px;
+    background: url('./img/Yokohama_Background.jpg') no-repeat;
+    background-size: cover;
+    filter: drop-shadow(5px 0px 5px #666);
+}
+
+.yokohama__title {
+    position: absolute;
+    width:    436px;
+    height:   calc(117vh - 134px);
+    margin:   0;
+    left:     0;
+    opacity:  1;
+    color: rgb(212, 0, 0);
+    background-image: linear-gradient( rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.842), rgba(255, 255, 255, 0.1));
+    font-size:    80px;
+    line-height:  calc(115vh - 134px);
+    text-align:   center;
+    font-family: 'Ephesis', cursive;
+    transition:   2s 0.5s;
+}
+.yokohama__title__show{
+    left:    calc((100% - 436px)/2);
+    opacity: 1;
+}
+
+/* saitama */
+
+.saitama {
+    position:    relative;
+    padding-top: 67px;
+    width:       100%;
+    height:      100vh;
+    background-image: linear-gradient(to bottom left, #fff,#ffdaed);
+
+}
+
+.saitama__img__sakura{
+    position: absolute;
+    width: 380px;
+    top: -10px;
+    left: 0px;
+    transition: 5s;
+    z-index: 10;
+}
+
+.saitama__header {
+    position: absolute;
+    width: 40%;
+    height: 100px;
+    left: 48px;
+    bottom: 35vh;
+}
+
+.saitama__title {
+    position: absolute;
+    top:-50px;
+    left: 50px;
+    font-family: 'Ephesis', cursive;
+    font-size: 140px;
+    padding: 0;
+    margin: 0;
+    line-height: 150px;
+    color: green;
+}
+
+.saitama__title__sub{
+    position: absolute;
+    top: 100px;
+    left: 50px;
+    color: rgb(0, 75, 0);
+    font-size: 24px;
+}
+
+
+.saitama__line {
+    display: flex;
+    flex-direction: row-reverse;
+    margin: 0;
+    padding: 0;
+}
+
+
+.saitama__img__1,
+.saitama__img__2,
+.saitama__img__3,
+.saitama__img__4,
+.saitama__img__5 {
+    list-style: none;
+    display: block;
+    width: 28vh;
+    height: 28vh;
+    margin: 3px;
+    transform: rotateY(180deg);
+}
+
+.saitama__img__1{
+    transition: 2s;
+}
+.saitama__img__2{
+    transition: 2s 0.5s;
+}
+.saitama__img__3{
+    transition: 2s 1s;
+}
+.saitama__img__4{
+    transition: 2s 1.5s;
+}
+.saitama__img__5{
+    transition: 2s 2s;
+}
+
+.saitama__img__1__show,
+.saitama__img__2__show,
+.saitama__img__3__show,
+.saitama__img__4__show,
+.saitama__img__5__show {
+    transform: rotateY(360deg);   
+}
+
+
+.line__1 .saitama__img__5 {
+    background-image: url(./img/saitama-1.jpg);
+    background-size: cover;
+}
+.line__1 .saitama__img__4 {
+    background-image: url(./img/saitama-2.jpg);
+    background-size: cover;
+}
+.line__1 .saitama__img__3 {
+    background-image: url(./img/saitama-3.jpg);
+    background-size: cover;
+}
+.line__1 .saitama__img__2 {
+    background-image: url(./img/saitama-4.jpg);
+    background-size: cover;
+}
+.line__1 .saitama__img__1 {
+    background-image: url(./img/saitama-5.jpg);
+    background-size: cover;
+}
+
+
+.line__2 .saitama__img__4 {
+    background-image: url(./img/saitama-6.jpg);
+    background-size: cover;
+}
+.line__2 .saitama__img__3 {
+    background-image: url(./img/saitama-7.jpg);
+    background-size: cover;
+}
+.line__2 .saitama__img__2 {
+    background-image: url(./img/saitama-8.jpg);
+    background-size: cover;
+}
+.line__2 .saitama__img__1 {
+    background-image: url(./img/saitama-9.jpg);
+    background-size: cover;
+}
+
+
+.line__3 .saitama__img__3 {
+    background-image: url(./img/saitama-10.jpg);
+    background-size: cover;
+}
+.line__3 .saitama__img__2 {
+    background-image: url(./img/saitama-11.jpg);
+    background-size: cover;
+}
+.line__3 .saitama__img__1 {
+    background-image: url(./img/saitama-12.jpg);
+    background-size: cover;
+}
+
+/* saitama sub */
+.saitama__sub {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(to bottom right,#ffdaed, #fff);
+    display: flex;
+    justify-content: space-around;
+}
+
+.saitama__background__half{
+    position: absolute;
+    width: 100%;
+    height: 50vh;
+    top: 50%;
+    background-color: #fff;
+    z-index: 0;
+}
+
+.saitama__box {
+    width: 32%;
+    height: 50vh;
+    position: relative;
+    top: 70px;
+    border: 1px solid #999;
+    border-radius: 2px;
+    z-index: 10;
+}
+
+
+.box_1 {
+    background: url(./img/saitama__sub__1.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.box_2 {
+    background: url(./img/saitama__sub__2.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.box_3 {
+    background: url(./img/saitama__sub__3.jpg) no-repeat center;
+    background-size: cover;
+}
+
+.box__content {
+    position: absolute;
+    left: 10%;
+    top: 48vh;
+    width: 80%;
+    height: 32vh;
+    background-color: #fff;
+    border: 1px solid #999;
+    border-radius: 2px;
+    text-align: center;
+}
+
+.box__content::after {
+    position: absolute;
+    content: "";
+    width:  0;
+    height: 0;
+    top:    0;
+    left:   -1px;
+    border-style: solid;
+    border-width: 70px 70px 0 0;
+    border-color: rgb(137, 171, 227) transparent transparent transparent;
+}
+
+.content__num {
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    display: block;
+    z-index: 1;
+    font-size: 25px;
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.box__header {
+    text-align: center;
+    padding-top: 25px;
+    color: #666;
+}
+
+.box__sub {
+    display: block;
+    font-size: 15px;
+    margin: 0 10px;
+    color: #333;
+    line-height: 22px;
+}
+
+/* modal */
+.modal {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(0,0,0,0.75);
+    z-index: 1000;
+    display: none;
+}
+
+.modal.open {
+    display: block;
+}
+
+.saitama__img {
+    width: 924px;
+    height: 680px;
+    margin-top: calc((100vh - 680px)/2);
+    margin-bottom: calc((100vh - 680px)/2);
+    margin-left: calc((100% - 924px)/2);
+    margin-right: calc((100% - 924px)/2);
+    border: 1px solid #666;
+    border-radius: 3px;
+    animation: modalFadeIn ease 0.5s;
+}
+
+@keyframes modalFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-150px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+
+
+
+

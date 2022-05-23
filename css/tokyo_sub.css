@@ -1,0 +1,259 @@
+/* tokyo__sub__slider befor */
+.tokyo__sub {
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+/* SLIDER */
+
+.tokyo__sub .tokyo__slider__content {
+    position: relative;
+    height: 100%;
+    white-space: nowrap;
+    font-size: 0;
+    transition: 0.8s;
+}
+
+/* SLIDES */
+
+.tokyo__sub .tokyo__slider__content > * {
+    font-size: 1rem;
+    display: inline-block;
+    white-space: normal;
+    vertical-align: top;
+    height: 100%;
+    width: 100%;
+    background: none 50% no-repeat;
+    background-size: cover;
+}
+
+/* PREV/NEXT, CONTAINERS & ANCHORS */
+
+.tokyo__sub .tokyo__slider__prevNext {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    width: 100%;
+    height: 0;
+}
+
+.tokyo__sub .tokyo__slider__prevNext > div+div {
+    visibility: hidden; 
+}
+
+.tokyo__sub .tokyo__slider__prevNext a {
+    position: absolute;
+    border-radius: 50%;
+    margin:      0;
+    width:       70px;
+    height:      100px;
+    line-height: 60px;
+    text-align: center;
+    opacity:     0.5;
+    -webkit-transition: 0.3s;
+    transition:  0.3s;
+    -webkit-transform: translateY(-50%);
+    transform:         translateY(-50%);
+    left: 0;
+}
+
+.tokyo__slider__prevNext a i {
+    color: rgb(251, 153, 66);
+    font-size: 36px;
+}
+
+.tokyo__sub .tokyo__slider__prevNext a:hover {
+    opacity: 1;
+}
+.tokyo__sub .tokyo__slider__prevNext a:active {
+    width: 75px;
+}
+.tokyo__sub .tokyo__slider__prevNext a+a {
+    left: auto;
+    right: 0;
+}
+
+/* NAVIGATION */
+
+.tokyo__slider__bullets {
+    position: absolute;
+    z-index: 2;
+    bottom: 1%;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+    left: 0%;
+    transition: 3s;
+}
+
+.tokyo__sub .tokyo__slider__bullets > a {
+    margin:0 10px 10px 10px ;
+    border-radius: 50%;
+    font-size:   22px;
+    display: inline-block;
+    width:       60px;
+    height:      30px;
+    line-height: 30px;
+    text-decoration: none;
+    text-align: center;
+    background: rgba(255, 255, 255, 1);
+    -webkit-transition: 0.8s;
+    transition: 0.8s;
+}
+.tokyo__sub .tokyo__slider__bullets > a:hover{
+    color: rgb(255, 255, 255);
+    background: rgba(255, 123, 0, 0.7) !important;
+}
+.tokyo__sub .tokyo__slider__bullets > a+a {
+    background: rgba(255, 255, 255, 0.5); /* Dim all but first */
+}
+
+/* NAVIGATION BUTTONS */
+/* ALL: */
+.tokyo__sub >s:target ~ .tokyo__slider__bullets >* {      background: rgba(255, 255, 255, 0.5);}
+/* ACTIVE */
+#tokyo__slider__1:target ~ .tokyo__slider__bullets >*:nth-child(1) {background: rgba(255, 255, 255,   1);}
+#tokyo__slider__2:target ~ .tokyo__slider__bullets >*:nth-child(2) {background: rgba(255, 255, 255,   1);}
+#tokyo__slider__3:target ~ .tokyo__slider__bullets >*:nth-child(3) {background: rgba(255, 255, 255,   1);}
+#tokyo__slider__4:target ~ .tokyo__slider__bullets >*:nth-child(4) {background: rgba(255, 255, 255,   1);}
+/* More slides? Add here more rules */
+
+/* PREV/NEXT CONTAINERS VISIBILITY */
+/* ALL: */
+.tokyo__sub >s:target ~ .tokyo__slider__prevNext >* {      visibility: hidden;}
+/* ACTIVE: */
+#tokyo__slider__1:target ~ .tokyo__slider__prevNext >*:nth-child(1) {visibility: visible;}
+#tokyo__slider__2:target ~ .tokyo__slider__prevNext >*:nth-child(2) {visibility: visible;}
+#tokyo__slider__3:target ~ .tokyo__slider__prevNext >*:nth-child(3) {visibility: visible;}
+#tokyo__slider__4:target ~ .tokyo__slider__prevNext >*:nth-child(4) {visibility: visible;}
+/* More slides? Add here more rules */
+
+/* tokyo__slider__content ANIMATION POSITIONS */
+
+#tokyo__slider__1:target ~ .tokyo__slider__content {transform: translateX(   0%); -webkit-transform: translateX(   0%);}
+#tokyo__slider__2:target ~ .tokyo__slider__content {transform: translateX(-100%); -webkit-transform: translateX(-100%);}
+#tokyo__slider__3:target ~ .tokyo__slider__content {transform: translateX(-200%); -webkit-transform: translateX(-200%);}
+#tokyo__slider__4:target ~ .tokyo__slider__content {transform: translateX(-300%); -webkit-transform: translateX(-300%);}
+/* More slides? Add here more rules */
+
+.tokyo__sub{
+    color: #fff;	
+}
+.tokyo__sub a {
+    margin: 0 3px;
+    color: rgba(0,0,0,0.8);
+    text-decoration: none;
+}
+
+#tokyo__slider{
+    position: relative;
+    width:  100%;
+    height: 100vh;
+    overflow: auto;
+}
+#box_img{
+    position: relative;
+    width:  55%;
+    height: 80vh;
+    top:    10vh;
+    left:   10vh;
+    overflow: hidden;
+    float:    left;
+}
+
+#tokyo__slider__img{
+    position: absolute ;
+    left:   0;
+    top:    0;
+    right:  0;
+    bottom: 0;
+    width:  100%;
+    margin:   auto;
+}
+#tokyo__slider__number{
+    position: absolute;
+    font: 16px/1.3 sans-serif;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    font-size: 680px;
+    font-weight: 900;
+    line-height: 88vh;
+    text-align: center;
+    color: #000;
+    background-color: rgb(255, 255, 255);
+    mix-blend-mode: screen;
+    transition: all 1.1s;
+}
+#tokyo__slider__number:hover{
+    /* top: -100%; */
+    opacity: 0;
+}
+#box__text{
+    position: relative;
+    overflow: hidden;
+    top: 5vh;
+    right: 5vh;
+    width: 45%;
+    height: 95vh;
+    float: left;
+}
+#tokyo__slider__text__super{
+    position: absolute;
+    color: #000;
+    top: 15%;
+    left: 21%;
+    font-size: 48px;
+}
+#tokyo__slider__text__sub{
+    position: absolute;
+    color: black;
+    top: 36.5%;
+    left: 22%;
+    right: 10%;
+    font-size: 18px;
+    line-height: 22px;
+    font-weight: 100;
+}
+/* .tokyo__slider__circle {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    background-color: rgba(251,153,66,1);
+    border-radius: 50%;
+    top: 500px;
+    left: 300px;
+    transition: 3s;
+}
+.tokyo__slider__circle__show{
+    top: 500px;
+}
+.tokyo__slider__circle::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 500px;
+    height: 500px;
+    background-color: transparent;
+    border-radius: 50%;
+    border: solid 50px rgba(251,153,66,0.5);
+    top: -73px;
+    left: -73px;
+} */
+
+/* tokyo__sub__slider after */
+.tokyo__slider__momiji__circle{
+    position:absolute;
+    z-index: 10;
+    height: 40%;
+    top: 150%;
+    opacity: 0.9;
+    transition: 3s 0.5s;
+}
+.tokyo__slider__momiji__circle__show{
+    top: 58%;
+    right: 0%;
+}

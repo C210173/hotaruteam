@@ -1,0 +1,178 @@
+.tokyo__momiji{
+    position: absolute;
+    overflow: auto;
+}
+#tokyo__momiji__container{
+    position: absolute;
+    width: 100%;
+    left: 0%;
+}
+
+#tokyo__momiji__container img{
+    width: 15%;
+    
+}
+.leaf-01 {
+    top: -350px;
+    position: absolute;
+}
+.leaf-01__show{
+    animation: fall1 linear 5s 0s;
+}
+@keyframes fall1 {
+    0% {
+        left: 0px;
+        top: -300px;
+        transform: rotateX(30deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotateX(360deg);
+        top: 500px;
+        left: 900px;
+        opacity: 0;
+    }
+}
+.leaf-02 {
+    top: -350px;
+    position: absolute;
+}
+.leaf-02__show{
+    animation: fall2 linear 5.5s 2s;
+}
+@keyframes fall2 {
+    0% {
+        left: 100px;
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotateX(-270deg);
+        top: 500px;
+        left: 0px;
+        opacity: 0;
+    }
+}
+.leaf-03 {
+    top: -350px;
+    position: absolute;
+}
+.leaf-03__show{
+    animation: fall3 linear 6s 0s;
+}
+@keyframes fall3 {
+    0% {
+        left: 150px;
+        transform: rotate(30deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-270deg);
+        top: 500px;
+        left: 0px;
+        opacity: 0;
+    }
+}
+.leaf-04 {
+    top: -350px;
+    position: absolute;
+}
+.leaf-04__show{
+    animation: fall4 linear 4.5s 1s;
+}
+@keyframes fall4 {
+    0% {
+        left: 0px;
+        top: -300px;
+        transform: rotateX(60deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotateX(360deg);
+        top: 500px;
+        left: 0px;
+        opacity: 0;
+    }
+}
+.leaf-05 {
+    top: -350px;
+    position: absolute;
+}
+.leaf-05__show{
+    animation: fall5 linear 6.5s 2.5s;
+}
+@keyframes fall5 {
+    0% {
+        left: 500px;
+        transform: rotateX(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotateX(480deg);
+        top: 500px;
+        left: 0px;
+        opacity: 0;
+    }
+}
+.leaf-06 {
+    top: -350px;
+    position: absolute;
+}
+.leaf-06__show{
+    animation: fall6 linear 6.5s 1.5s;
+}
+@keyframes fall6 {
+    0% {
+        left: 300px;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-360deg);
+        top: 500px;
+        left: 600px;
+        opacity: 0;
+    }
+}
+.leaf-07 {
+    top: -350px;
+    position: absolute;
+}
+.leaf-07__show{
+    animation: fall7 linear 4.5s 0s;
+}
+@keyframes fall7 {
+    0% {
+        left: 0px;
+        top: -300px;
+        transform: rotateX(60deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotateX(360deg);
+        top: 500px;
+        left: 0px;
+        opacity: 0;
+    }
+}
+
+.leaf-08 {
+    top: -350px;
+    position: absolute;
+}
+.leaf-08__show{
+    animation: fall8 linear 3.5s 1s;
+}
+@keyframes fall8 {
+    0% {
+        left: 100px;
+        transform: rotate(30deg);
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-70deg) rotateX(-360deg);
+        top: 500px;
+        left: 80px;
+        opacity: 0;
+    }
+}

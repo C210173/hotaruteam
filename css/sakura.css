@@ -1,0 +1,317 @@
+.saitama__sakura{
+    position: absolute;
+    overflow: auto;
+}
+#saitama__sakura__container{
+    z-index: 10;
+    position: absolute;
+    width: 100%;
+    left: 0%;
+}
+#saitama__sakura__container img{
+    width: 40px;
+    height: 40px;
+}
+
+.flower-01 {
+    position: absolute;
+    top: -67px;
+    opacity: 0;
+}
+.flower-01__show{
+    animation: fly1 linear 5.9s 0s;
+}
+@keyframes fly1 {
+    0% {
+        left: 0%;
+        transform: rotate(30deg);
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-360deg);
+        top: 600px;
+        left: 90%;
+        opacity: 0;
+    }
+}
+
+.flower-02 {
+    position: absolute;
+    top: -67px;
+    opacity: 0;
+}
+.flower-02__show{
+    animation: fly2 linear 6.9s 0.15s;
+}
+@keyframes fly2 {
+    0% {
+        left: 5%;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-270deg);
+        top: 600px;
+        left: 85%;
+        opacity: 0;
+    }
+}
+
+.flower-03 {
+    position: absolute;
+    top: -67px;
+    opacity: 0;
+}
+.flower-03__show{
+    animation: fly3 linear 7.9s 0.3s;
+}
+@keyframes fly3 {
+    0% {
+        left: 10%;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        transform: rotateX(900deg);
+        top: 600px;
+        left: 65%;
+        opacity: 0;
+    }
+}
+
+.flower-04 {
+    position: absolute;
+    top: -67px;
+    opacity: 0;
+}
+.flower-04__show{
+    animation: fly4 linear 5.9s 0.45s;
+}
+@keyframes fly4 {
+    0% {
+        left: 15%;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    50%{
+        left: 2%;
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(560deg) rotateX(900deg);
+        top: 600px;
+        left: 10%;
+        opacity: 0;
+    }
+}
+
+.flower-05 {
+    position: absolute;
+    top: -67px;
+    opacity: 0;
+}
+.flower-05__show{
+    animation: fly5 linear 6.9s 1s;
+}
+@keyframes fly5 {
+    0% {
+        left: 20%;
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(560deg) rotateX(560deg);
+        top: 600px;
+        left: 75%;
+        opacity: 0;
+    }
+}
+
+.flower-06 {
+    position: absolute;
+    top: -67px;
+    opacity: 0;
+}
+.flower-06__show{
+    animation: fly6 linear 7.9s 0.75s;
+}
+@keyframes fly6 {
+    0% {
+        left: 20%;
+        transform: rotate(-60deg);
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(480deg) rotateX(560deg);
+        top: 600px;
+        left: 95%;
+        opacity: 0;
+    }
+}
+
+.flower-07 {
+    position: absolute;
+    top: -67px;
+    opacity: 0;
+}
+.flower-07__show{
+    animation: fly7 linear 5.9s 2s;
+}
+@keyframes fly7 {
+    0% {
+        left: 2%;
+        transform: rotate(-60deg);
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(480deg) rotateX(560deg) rotateY(360deg);
+        top: 600px;
+        left: 45%;
+        opacity: 0;
+    }
+}
+
+.flower-08 {
+    position: absolute;
+    top: -67px;
+    opacity: 0;
+}
+.flower-08__show{
+    animation: fly8 linear 10.9s 3.5s;
+}
+@keyframes fly8 {
+    0% {
+        left: 50%;
+        transform: rotate(-60deg);
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(480deg) rotateX(560deg);
+        top: 600px;
+        left: 25%;
+        opacity: 0;
+    }
+}
+
+.flower-09 {
+    position: absolute;
+    top: -67px;
+    opacity: 0;
+}
+.flower-09__show{
+    animation: fly9 linear 9.9s 3s;
+}
+@keyframes fly9 {
+    0% {
+        left: 65%;
+        transform: rotate(-60deg);
+        opacity: 1;
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(480deg) rotateX(560deg) ;
+        top: 600px;
+        left: 30%;
+        opacity: 0;
+    }
+}
+
+.flower-10 {
+    position: absolute;
+    top: -67px;
+    opacity: 0;
+}
+.flower-10__show{
+    animation: fly10 linear 8s 3.35s;
+}
+@keyframes fly10 {
+    0% {
+        transform: rotate(-60deg);
+        opacity: 1;   
+        left: 85%;
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(480deg) rotateX(560deg) ;
+        top: 600px;
+        left: 20%;
+        opacity: 0;
+    }
+}
+
+.flower-11 {
+    position: absolute;
+    top: -67px;
+    opacity: 0;
+}
+.flower-11__show{
+    animation: fly11 linear 8s 4.5s;
+}
+@keyframes fly11 {
+    0% {
+        transform: rotate(-60deg);
+        opacity: 1;
+        left: 70%;
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(-480deg) rotateX(-560deg) ;
+        top: 600px;
+        left: 42%;
+        opacity: 0;
+    }
+}
+
+.flower-12 {
+    position: absolute;
+    top: -67px;
+    opacity: 0;
+}
+.flower-12__show{
+    animation: fly12 linear 9.9s 5s;
+}
+@keyframes fly12 {
+    0% {
+        transform: rotate(-60deg);
+        opacity: 1;
+        left: 92%;
+    }
+    90%{
+        opacity: 1;
+    }
+    100% {
+        transform: rotate(480deg) rotateX(-560deg) ;
+        top: 600px;
+        left: 5%;
+        opacity: 0;
+    }
+}

@@ -1,0 +1,229 @@
+.yokohama__sub {
+    margin-top: 0px;
+    width: 100%;
+    height: 110vh;
+    flex-direction: row;
+    display: flex;
+  }
+  .yokohama__sub__header {
+    position: absolute;
+    z-index: 91;
+    color: white;
+    margin-left: 40px;
+    margin-top: 155px;
+    padding-left: 15px;
+    border-left: 2px solid white;
+    font-family: 'Mukta', sans-serif;
+    letter-spacing: 1px;
+    left: 75%;
+    opacity: 0;
+    transition: 2s;
+  }
+  .yokohama__sub__header__show{
+    left: 0%;
+    opacity: 1;
+  }
+  
+  .yokohama__sub__header h1 {
+    font-size: 4vw;
+    margin-top: -5px;
+  }
+  
+  .yokohama__sub__header h2 {
+    margin-top: -2vw;
+    font-size: 80%;
+    font-family: 'Montserrat', sans-serif;
+    line-height: 24px;
+  }
+  
+  .yokohama__sub__side {
+    flex: 2;
+    background:  #2f5f99 ;
+    display: flex;
+    flex-direction: column;
+  }
+  .txt {
+    flex: 1;
+  }
+  .boxes {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  .first-line {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+    width: 50%;
+  }
+  .yokohama__sub__f1 {
+    position: relative;
+    background: #83726b;
+    flex: 1;
+    cursor: pointer;
+    left: -50%;
+    opacity: 0;
+    transition: 2s ease;
+  }
+  .yokohama__sub__f1__show{
+    left: 0%;
+    opacity: 1;
+  }
+  
+  .yokohama__sub__f1:hover {
+    box-shadow: inset 0 0 0 10px rgba(255, 255, 255, .4);
+  }
+  
+  .second-line {
+    flex: 1;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .yokohama__sub__f2 {
+    position: relative;
+    flex: 1;
+    background: #7f636d;
+    cursor: pointer;
+    left: -100%;
+    opacity: 0;
+    transition: 1.5s ease;
+  }
+  .yokohama__sub__f2__show{
+    left: 0% ;
+    opacity: 1 ;
+  }
+
+  
+  .yokohama__sub__f2:hover {
+    box-shadow: inset 0 0 0 10px rgba(255, 255, 255, .4);
+  }
+  
+  .yokohama__sub__f3 {
+    position: relative;
+    flex: 1;
+    background: #7d4850;
+    cursor: pointer;
+    left: -50%;
+    opacity: 0;
+    transition: 1.5s ease;
+  }
+  .yokohama__sub__f3__show{
+    left: 0% ;
+    opacity: 1 ;
+  }
+  
+  .yokohama__sub__f3:hover {
+    box-shadow: inset 0 0 0 10px rgba(255, 255, 255, .4);
+  }
+  
+  .yokohama__sub__inside {
+    width: 100%;
+    height: Calc(100% - 40px);
+    margin: 20px 0;
+    text-align: center;
+    vertical-align: middle;
+    color: white;
+  }
+  
+  .yokohama__sub__inside span {
+    height: 1px;
+    width: 30%;
+    background: white;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  .yokohama__sub__inside h3 {
+    font-size: 100%;
+    position: relative;
+    top: 30%;
+    transform: translateY(-50%);
+  }
+  
+  .yokohama__sub__inside h4 {
+    font-size: 80%;
+    color: #2b2422;
+    position: relative;
+    bottom: -30%;
+    transform: translateY(-50%);
+  }
+  
+  .yokohama__sub__slidep {
+    background-color: #2f5f99;
+    flex: 5;
+    overflow: hidden;
+  }
+  
+  /*SLIDESHOW*/
+  
+  /* ---------------------------------- */
+  
+  /* Essential Styles */
+  
+  .yokohama__sub__slider{
+    position: relative;
+    display: flex;
+    left: 100%;
+    transition: 1.5s;
+  }
+  .yokohama__sub__slider__show{
+    left: 0%;
+  }
+  
+  .yokohama__sub__slide {
+    width: 100%;
+    margin-right: -100%;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .yokohama__sub__slide:first-child {
+    z-index: 2;
+  }
+  
+  .yokohama__sub__slide:focus,
+  .yokohama__sub__slide:focus-within {
+    z-index: 10;
+  }
+  
+  /* ---------------------------------- */
+  
+  /* Animation-based styles */
+  
+  .yokohama__sub__slide {
+    transition: all .6s cubic-bezier(.5, 0, .5, 1), z-index .7s linear;
+    transform: translateX(-50%) scale(0.8);
+    opacity: 0;
+  }
+  
+  .yokohama__sub__slider:not(:focus-within) .yokohama__sub__slide:first-child,
+  .yokohama__sub__slide:focus,
+  .yokohama__sub__slide:focus-within {
+    transform: translateX(0%) scale(1);
+    opacity: 1;
+    z-index: 10;
+  }
+  
+  /* ---------------------------------- */
+  
+  /* Stylistic Choices */
+  
+  .yokohama__sub__slide {
+    height: 110vh;
+    display: flex;
+    background: rgb(255, 0, 0);
+    background: hsl( calc(360deg * ( var(--i) / var(--total))), 60%, 60%);
+  }
+  
+  .yokohama__sub__slider {
+    overflow: hidden;
+  }
+  
+  
+  .yokohama__sub__slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  

@@ -1,0 +1,37 @@
+.back_to_top {
+    position: fixed;
+    top: 0;
+    left: 95%;
+    z-index: 1000;
+    width:  50px;
+    height:  50px;
+    border-radius: 50%;
+    font-size: 35px;
+    color:  whitesmoke;
+    background: rgba(251, 152, 66, 0.5);
+    text-align:  center;
+    vertical-align: center;
+    display:  flex;
+    justify-content:  center;
+    align-items:  center;
+	cursor: pointer;
+	opacity: 0;
+    transition: all 1s 0.2s;
+    transition-timing-function: ease-in-out;
+}
+
+.back_to_top:hover{
+    background: rgba(251, 152, 66, 1);
+}
+.back_to_top_show_tokyo{
+    opacity: 1;
+    top: 90%;
+}
+.back_to_top_show_yokohama{
+    opacity: 1;
+    top: 90%;
+    border-radius: 10%;
+}
+.back_to_top i {
+    line-height: 50px;
+}

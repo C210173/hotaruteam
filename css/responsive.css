@@ -1,0 +1,822 @@
+/* mobiphone and ipad mini */
+@media(max-width: 1024px) {
+    #header {
+        overflow: hidden;
+    }
+    /* .nav {
+        display: flex;
+        justify-content: flex-start;
+    } */
+    #navbar {
+        margin: 0 10px 0 30px;
+    }
+    .navbar__color {
+        width: 100px;
+        font-size: 16px;
+    }
+    .title {
+        width: 330px;
+        height: 330px;
+        top: calc((100% - 330px)/2);
+        left: calc((100% - 330px)/2);
+    }
+    .title::after {
+        width: 350px;
+        height: 350px;
+    }
+    .title__year {
+        top: 42px;
+        font-size: 40px;
+    }
+    .title__english {
+        top: 74px;
+        font-size: 19px;
+    }
+    .title__main {
+        top: 105px;
+    }
+    .title__group {
+        top: 236px;
+    }
+/* tokyo */
+    .tokyo {
+        height: 90vh;
+    }
+    .momiji__circle {
+        width: 300px;
+        height: 300px;
+        top: 0;
+        left: 0;
+    }
+    .tokyo__img {
+        width: 90%;
+        top: 70px;
+        right: 0;
+        border-radius: 4px;
+        margin: 0 5%;
+        box-shadow: 0px 0px 30px #666;
+        border-radius: 4px;
+        z-index: -1;
+    }
+    .tokyo__title {
+        z-index: 1;
+        font-size: 120px;
+        top: 60vh;
+        left: 100px;
+        text-shadow: 2px 2px 2px #fff;
+    }
+    .tokyo__text__sub {
+        z-index: 1;
+        top: 75vh;
+        left: 20px;
+        font-size: 20px;
+        width: 640px;
+        margin: 17px calc((100% - 640px)/2);
+    }
+/* tokyo sub */
+    #tokyo__slider{
+        margin: 1.5vh 0;
+        height: 55vh;
+    }
+    #box_img{
+        top: 0;
+        width: 70%;
+        height: 50vh;
+        left: 4vh;
+    }
+    #box__text {
+        top: 0;
+        width: 30%;
+        height: 50vh;
+        z-index: 1;
+    }
+    #tokyo__slider__text__super {
+        font-size: 30px;
+        left: 30%;
+        top: 35%;
+        background-color: rgba(255, 255, 255, 0.6);
+        padding: 10px;
+        border-radius: 4px;
+    }
+    #tokyo__slider__text__sub {
+        display: none;
+    }
+    #tokyo__slider__number {
+        display: none;
+    }
+    .tokyo__sub .tokyo__slider__prevNext a {
+        /* top: -3vh; */
+        margin: 0 -10px;
+    }
+    .tokyo__slider__momiji__circle__show {
+        display: none;
+    }
+/* yokohama */
+    .yokohama {
+        height: 60vh;
+    }
+    .yokohama__title {
+        width: 100%;
+        top: 15vh;
+        height: calc(30vh - 134px);
+        line-height: calc(30vh - 134px);
+    }
+    .yokohama__title__show {
+        left: 0;
+    }
+    .yokohama__container {
+        left: 30px;
+        right: 30px;
+    }
+/* yokohama sub */
+    .yokohama__sub{
+        height: 60vh;
+        background-color: #2f5f99;
+    }
+    .yokohama__sub__header__show{
+        left: -3%;
+    }
+    .yokohama__sub__slide img{
+        object-position: -600px -200px ;
+    }
+/* saitama */
+    .saitama{
+        padding-top: 160px;
+        height: 50vh;
+    }
+    .saitama__title{
+        font-size: 60px;
+        top: 10vh;
+        left: 1vw;
+    }
+    .saitama__title__sub{
+        font-size: 20px;
+        top: 21vh;
+        left: -8px;
+        width: 40vw;
+    }
+    .saitama__img__sakura{
+        width: 300px;
+        top: -40px;
+    }
+    /* Saitama__img__line */
+    .saitama__album{
+        padding-right: 10px;
+    }
+    .saitama__img__1,
+    .saitama__img__2,
+    .saitama__img__3,
+    .saitama__img__4,
+    .saitama__img__5 {
+        width: 12vh;
+        height: 12vh;
+        margin: 3px;
+    }
+/* saitama sub */
+    .saitama__sub {
+        height: 120vh;
+        flex-wrap: wrap;
+    }
+    .saitama__box{
+        width: 85%;
+        height: 26%;
+        border-radius: 10px;
+    }
+    .box__content{
+        top: 85%;
+        height: 38%;
+        border-radius: 10px;
+    }
+    .box__header{
+        padding: 0;
+        margin: 3% 0 0 0;
+        font-size: 24px;
+    }
+    .box__sub{
+        text-align: center;
+        padding: 20px;
+        line-height: 24px;
+    }
+
+    .saitama__background__half{
+        height: 75vh;
+    }
+
+/* back to top & footer */
+    .back_to_top {
+        display: none;
+    }
+    .footer__container{
+        height: 40vh;
+    }
+    .footer__content{
+        width: 768px;
+        left: calc((100% - 768px)/2);
+    }
+    .post1{
+        width: 384px;
+    }
+    .post2{
+        width: 384px;
+    }
+}
+
+/* Ipad ngang */
+@media (width: 1024px) and (height: 768px){
+    /* header */
+        .navbar__color {
+            width: 120px;
+            font-size: 20px;
+        }
+        .title {
+            width: 380px;
+            height: 380px;
+            top: calc((100% - 380px)/2);
+            left: calc((100% - 380px)/2);
+        }
+        .title::after {
+            width: 400px;
+            height: 400px;
+        }
+        .title__year {
+            top: 50px;
+            font-size: 40px;
+        }
+        .title__english {
+            top: 90px;
+            font-size: 19px;
+        }
+        .title__main {
+            top: 125px;
+        }
+        .title__group {
+            top: 270px;
+        }
+    /* Tokyo */
+        .tokyo{
+            height: 100vh;
+        }
+        .tokyo__img{
+            width: 650px;
+            right: -250px;
+            top: 70px;
+            border-radius: 50%;
+        }
+        .tokyo__title{
+            top: 40%;
+            left: 16%;
+            font-size: 120px;
+        }
+        .tokyo__text__sub{
+            top: 60%;
+            left: 8%;
+            font-size: 22px;
+            width: 500px;
+            margin: 0;
+        }
+        .momiji__circle {
+            display: block;
+            width: 400px;
+            height: 400px;
+        }
+    /* tokyo sub */
+        .tokyo__sub{
+            height: 95vh;
+        }
+        #tokyo__slider__number{
+            display: none;
+        }
+        #box_img{
+            width: 68%;
+            left: 40px;
+            top: 10vh;
+            height: 80vh;
+        }
+        #box__text{
+            right: 2vh;
+            width: 32%;
+            top: 5vh;
+            height: 95vh;
+        }
+        #tokyo__slider{
+            margin: 0;
+            height: 100vh;
+        }
+        .tokyo__slider__momiji__circle__show{
+            right: 0%;
+            top: 70%;
+            height: 30%;
+            display: block;
+        }
+        #tokyo__slider__text__super{
+            left: 20%;
+            font-size: 38px;
+            top: 15%;
+            background-color: unset;
+            padding: 0;
+            border-radius: 0%;
+        }
+        #tokyo__slider__text__sub {
+            display: block;
+            right: 5%;
+        }
+        .tokyo__sub .tokyo__slider__prevNext{
+            top: 55%;
+        }
+        .tokyo__sub .tokyo__slider__prevNext a{
+            width: 30px;
+            top: 0;
+            margin: 0;
+        }
+        .tokyo__slider__bullets{
+            bottom: 0;
+        }
+    /* Yokohama */
+        .yokohama{
+            height: 100vh;
+        }
+        .yokohama__title{
+            top: 0;
+            font-size: 75px;
+            height: 651px;
+            width: 350px;
+            line-height: calc(100vh - 134px);
+        }
+        .yokohama__title__show{
+            left: calc((100% - 350px)/2);
+        }
+        .yokohama__container{
+            right: 40px;
+            left: 40px;
+        }
+
+    /* Yokohama sub */
+        .yokohama__sub{
+            height: 100vh;
+        }
+        .yokohama__sub__header{
+            margin-left: 20px;
+            width: 250px;
+        }
+        .txt {
+            flex: 6;
+          }
+        .boxes {
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+        }
+        .yokohama__sub__header__show{
+            left: 0%;
+        }
+        .yokohama__sub__slide img{
+            object-position: unset  ;
+        }
+
+
+        
+    /* Saitama */
+        .saitama{
+            padding-top: 160px;
+            height: 80vh;
+        }
+        .saitama__title{
+            font-size: 90px;
+            top: 2px;
+            left: -14px;
+        }
+        .saitama__title__sub{
+            font-size: 22px;
+            top: 135px;
+            left: -8px;
+            width: 400px;
+        }
+        .saitama__img__sakura{
+            top: 0px;
+        }
+    /* Saitama__img__line */
+        .saitama__album{
+            padding-right: 10px;
+        }
+        .saitama__img__1,
+        .saitama__img__2,
+        .saitama__img__3,
+        .saitama__img__4,
+        .saitama__img__5 {
+            width: 22vh;
+            height: 22vh;
+            margin: 3px;
+        }
+        
+    /* Saitama sub */
+        .saitama__sub{
+            height: 90vh;
+            flex-wrap: unset;
+        }
+        .box__content{
+            height: 35vh;
+            top: 95%;
+        }
+        .box__header{
+            font-size: 24px;
+            padding-top: 25px;
+        }
+        .box__sub{
+            text-align: center;
+            padding: 20px;
+            line-height: 25px;
+        }
+        .saitama__box{
+            width: 32%;
+            height: 50%;
+            border-radius: 8px;
+        }
+        /* saitama sub */
+        
+        /* 
+        
+        
+        .box__sub{
+            text-align: center;
+            padding: 20px;
+        }
+
+        .saitama__background__half{
+            height: 75vh;
+        }  */
+    /* Footer */
+        .footer__container{
+            height: 53vh;
+        }
+    /* back to top */
+        .back_to_top {
+            display: block;
+            left: 94%;
+        }
+} 
+/* chuyển tiếp giữa ipad & ipad pro */
+@media (min-width: 1025px) and (max-width: 1365px){
+    /* header */
+        .navbar__color {
+            width: 120px;
+            font-size: 20px;
+        }
+        .title {
+            width: 380px;
+            height: 380px;
+            top: calc((100% - 380px)/2);
+            left: calc((100% - 380px)/2);
+        }
+        .title::after {
+            width: 400px;
+            height: 400px;
+        }
+        .title__year {
+            top: 50px;
+            font-size: 40px;
+        }
+        .title__english {
+            top: 90px;
+            font-size: 19px;
+        }
+        .title__main {
+            top: 125px;
+        }
+        .title__group {
+            top: 270px;
+        }
+    /* Tokyo */
+        .tokyo{
+            height: 100vh;
+        }
+        .tokyo__img{
+            width: 650px;
+            right: -250px;
+            top: 70px;
+            border-radius: 50%;
+        }
+        .tokyo__title{
+            top: 40%;
+            left: 22%;
+            font-size: 120px;
+        }
+        .tokyo__text__sub{
+            top: 60%;
+            left: 12%;
+            font-size: 22px;
+            width: 600px;
+            margin: 0;
+        }
+        .momiji__circle {
+            display: block;
+            width: 400px;
+            height: 400px;
+        }
+    /* tokyo sub */
+        .tokyo__sub{
+            height: 95vh;
+        }
+        #tokyo__slider__number{
+            display: block;
+        }
+        #box_img{
+            width: 68%;
+            left: 40px;
+            top: 10vh;
+            height: 78vh;
+        }
+        #box__text{
+            right: 2vh;
+            width: 32%;
+            top: 5vh;
+            height: 95vh;
+        }
+        #tokyo__slider{
+            margin: 0;
+            height: 100vh;
+        }
+        .tokyo__slider__momiji__circle__show{
+            right: 0%;
+            top: 70%;
+            height: 30%;
+            display: block;
+        }
+        #tokyo__slider__text__super{
+            left: 20%;
+            font-size: 36px;
+            top: 15%;
+            background-color: unset;
+            padding: 0;
+            border-radius: 0%;
+        }
+        #tokyo__slider__text__sub {
+            display: block;
+        }
+        .tokyo__sub .tokyo__slider__prevNext{
+            top: 55%;
+        }
+        .tokyo__sub .tokyo__slider__prevNext a{
+            width: 30px;
+            top: 0;
+            margin: 0;
+        }
+        .tokyo__slider__bullets{
+            bottom: 0;
+            
+        }
+        .tokyo__sub .tokyo__slider__bullets > a {
+            margin:0 10px 0px 10px ;
+        }
+
+    /* Yokohama */
+        .yokohama{
+            height: 100vh;
+        }
+        .yokohama__title{
+            top: 0;
+            font-size: 75px;
+            height: 651px;
+            width: 350px;
+            line-height: calc(100vh - 134px);
+        }
+        .yokohama__title__show{
+            left: calc((100% - 350px)/2);
+            height: auto;
+            line-height: calc(100vh - 117px);
+        }
+        .yokohama__container{
+            right: 40px;
+            left: 40px;
+        }
+
+    /* Yokohama sub */
+        .yokohama__sub{
+            height: 100vh;
+        }
+        .yokohama__sub__header{
+            margin-left: 20px;
+            width: 250px;
+        }
+        .txt {
+            flex: 6;
+          }
+        .boxes {
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+        }
+        .yokohama__sub__header__show{
+            left: 0%;
+        }
+        .yokohama__sub__slide img{
+            object-position: unset  ;
+        }
+        .yokohama__sub__inside h4{
+            bottom: -20%;
+        }
+
+    /* Saitama */
+        .saitama{
+            padding-top: 160px;
+            height: 80vh;
+        }
+        .saitama__title{
+            font-size: 90px;
+            top: 2px;
+            left: 16px;
+        }
+        .saitama__title__sub{
+            font-size: 22px;
+            top: 145px;
+            left: 12px;
+            width: 520px;
+        }
+        .saitama__img__sakura{
+            top: 0px;
+        }
+    /* Saitama__img__line */
+        .saitama__album{
+            padding-right: 10px;
+        }
+        .saitama__img__1,
+        .saitama__img__2,
+        .saitama__img__3,
+        .saitama__img__4,
+        .saitama__img__5 {
+            width: 22vh;
+            height: 22vh;
+            margin: 3px;
+        }
+        
+    /* Saitama sub */
+        .saitama__sub{
+            height: 90vh;
+            flex-wrap: unset;
+        }
+        .box__content{
+            height: 35vh;
+            top: 95%;
+        }
+        .box__header{
+            font-size: 24px;
+            padding-top: 25px;
+        }
+        .box__sub{
+            text-align: center;
+            padding: 0 20px 20px 20px;
+            line-height: 25px;
+        }
+        .saitama__box{
+            width: 32%;
+            height: 50%;
+            border-radius: 10px;
+        }
+        /* saitama sub */
+        
+        /* 
+        
+        
+        .box__sub{
+            text-align: center;
+            padding: 20px;
+        }
+
+        .saitama__background__half{
+            height: 75vh;
+        }  */
+    /* Footer */
+        .footer__container{
+            height: 57vh;
+        }
+    /* back to top */
+        .back_to_top {
+            display: block;
+            left: 94%;
+        }
+} 
+
+/* Ipad Pro 10.5 ing */
+@media (min-width: 1366px) and (max-width: 1367px) {
+    
+    /* Tokyo */
+        .tokyo{
+            height: 95vh;
+        }
+        .tokyo__img{
+            width: 800px;
+            right: -250px;
+            top: 100px;
+        }
+        .tokyo__title{
+            top: 380px;
+            left: 220px;
+            font-size: 180px;
+        }
+        .tokyo__text__sub{
+            top: 560px;
+            left: 150px;
+        }
+    /* tokyo sub */
+        .tokyo__sub{
+            height: 95vh;
+        }
+        #tokyo__slider__number{
+            display: none;
+        }
+        #box_img{
+            width: 68%;
+            left: 40px;
+        }
+        #box__text{
+            right: 2vh;
+            width: 32%;
+        }
+        .tokyo__slider__momiji__circle__show{
+            right: 0%;
+            top: 68%;
+            height: 30%;
+        }
+        #tokyo__slider__text__super{
+            left: 20%;
+            top: 18%;
+            font-size: 42px;
+        }
+        .tokyo__sub .tokyo__slider__prevNext a{
+            width: 30px;
+        }
+        .tokyo__slider__bullets{
+            bottom: 0.8%;
+        }
+        .tokyo__sub .tokyo__slider__bullets > a {
+            margin:0 10px 0px 10px ;
+        }
+
+    /* Yokohama */
+        .yokohama{
+            height: 100vh;
+        }
+        .yokohama__title{
+            height: 907px;
+            line-height: calc(100vh - 134px);
+        }
+        .yokohama__container{
+            right: 50px;
+            left: 50px;
+        }
+    /* Yokohama sub */
+        .yokohama__sub{
+            height: 100vh;
+        }
+        .txt {
+            flex: 6;
+          }
+        .boxes {
+            flex: 4;
+            display: flex;
+            flex-direction: column;
+        }
+    /* Saitama */
+        .saitama{
+            padding-top: 160px;
+            height: 80vh;
+        }
+        .saitama__title{
+            font-size: 110px;
+            top: 100px;
+            left: 40px;
+        }
+        .saitama__title__sub{
+            font-size: 22px;
+            top: 250px;
+            left: 30px;
+            width: 525px;
+        }
+        .saitama__img__sakura{
+            top: 200px;
+        }
+    /* Saitama__img__line */
+        .saitama__album{
+            padding-right: 10px;
+        }
+        .saitama__img__1,
+        .saitama__img__2,
+        .saitama__img__3,
+        .saitama__img__4,
+        .saitama__img__5 {
+            width: 22vh;
+            height: 22vh;
+            margin: 5px;
+        }
+    /* Saitama sub */
+        .saitama__sub{
+            height: 92vh;
+        }
+        .box__content{
+            height: 24vh;
+        }
+
+    /* Footer */
+        .footer__container{
+            height: 42vh;
+        }
+} 
